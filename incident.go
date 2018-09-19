@@ -29,6 +29,7 @@ type Assignment struct {
 type Incident struct {
 	APIObject
 	IncidentNumber       uint              `json:"incident_number,omitempty"`
+	Title                string            `json:"title,omitempty"`
 	CreatedAt            string            `json:"created_at,omitempty"`
 	PendingActions       []PendingAction   `json:"pending_actions,omitempty"`
 	IncidentKey          string            `json:"incident_key,omitempty"`
